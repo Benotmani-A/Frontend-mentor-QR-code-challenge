@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>QR code challenge</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --lightgray: hsl(212, 45%, 89%);
+      --grayishblue: hsl(220, 15%, 55%);
+      --darkblue: hsl(218, 44%, 22%);
+    }
+
+    body {
+      background-color: var(--lightgray);
+      max-width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .qrcode {
+      
+      background-color: var(--white);
+      width: 20em;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    
+    #p1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--darkblue);
+    }
+
+    #p2 {
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--grayishblue);
+    }
+    
+    .qrcode div {
+      padding: 0 20px 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="qrcode">
+    <img src="images/image-qr-code.png" alt="qrcode_image">
+    <div>
+      <P id="p1">Improve your front-end skills by building projects</P>
+      <p id="p2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+</body>
+
+</html>
